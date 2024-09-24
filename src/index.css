@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family: "Montserrat", sans-serif; */
+@font-face {
+  font-family: Azedo-L;
+  src: url(fonts/Azedo-Light.otf);
+}
+@font-face {
+  font-family: Azedo-B;
+  src: url(fonts/Azedo-Bold.otf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background: #1A1A1A;
+}
+
+.deb-webelopers, .about-us{
+    font-family: Azedo-L;
+}
