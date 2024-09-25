@@ -7,7 +7,7 @@ const Footer = ({ teamMembers, email }) => {
   return (
     <div className="w-[100%] flex flex-col gap-8 justify-center items-center">
       {/* Heading and Email */}
-      <div className="w-[100%] flex justify-between items-center px-4">
+      <div className="w-[100%] md:w-[80%] lg:w-[60%] flex justify-between items-center px-4">
         <h3 className="text-2xl font-semibold">Let&apos;s Work Together -</h3>
         <button className="flex gap-2 items-center justify-center py-2 px-4 border border-[#484E53] rounded-full">
           <img src={GmailIcon} alt="Gmail" className="w-6" />
@@ -23,7 +23,7 @@ const Footer = ({ teamMembers, email }) => {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="w-[100%] flex justify-between sm:gap-10 sm:justify-normal"
+            className="w-[100%] flex justify-between sm:gap-10 sm:justify-center"
           >
             <div className="w-[200px] flex gap-2 items-center">
               <img src={GithubIcon} alt="Github" className="px-2 py-2" />
