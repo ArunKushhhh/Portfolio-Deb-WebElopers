@@ -3,7 +3,7 @@ import portfolio from "../assets/portfolio.jpg";
 
 const Hero = () => {
   return (
-    <div
+    <div id="home"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
@@ -30,7 +30,9 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex justify-center items-center px-8 py-2  border border-[#4FC3F7]  rounded-full">
+        <a href="#contact">
         <button className="flex justify-center items-center">Contact Us</button>
+        </a>
       </div>
     </div>
   );
