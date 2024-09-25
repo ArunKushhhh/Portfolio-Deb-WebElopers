@@ -17,10 +17,10 @@ const Navbar = () => {
             <a href="">About</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="">Services</a>
           </li>
           <li>
-            <a href="">Services</a>
+            <a href="">Projects</a>
           </li>
           <li>
             <a href="">Resume</a>
@@ -37,9 +37,9 @@ const Navbar = () => {
         </div>
         {/* hamburger */}
         <div className="w-6 flex flex-col gap-1 justify-center cursor-pointer md:hidden">
-          <div className="w-3 h-[2px] bg-white"></div>
+          <div className="w-3 h-[3px] bg-white"></div>
           <div className="w-6 h-[2px] bg-white"></div>
-          <div className="w-3 h-[2px] bg-white self-end"></div>
+          <div className="w-3 h-[3px] bg-white self-end"></div>
         </div>
       </div>
       {/* <div className="h-auto w-[100%] absolute top-0 left-0 bg-[#1a1a1a] border-b border-b-[#4FC3F7]">

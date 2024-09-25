@@ -8,6 +8,7 @@ const Hero = () => {
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        // backgroundRepeat: "no-repeat"
       }}
       className="w-[100%] flex flex-col gap-6 justify-center items-center mt-24"
     >

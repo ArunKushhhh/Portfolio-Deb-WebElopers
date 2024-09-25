@@ -112,20 +112,28 @@ const Contact = () => {
           name="service"
           value={formData.service}
           onChange={handleChange}
-          className={`px-4 py-2 rounded-md bg-transparent border ${
+          className={`px-4 py-3 rounded-md bg-transparent border text-xs ${
             errors.service ? "border-red-500" : "border-[#D6DDED]"
+          } ${
+            formData.service === "" ? "text-gray-400" : "text-black"
           } focus:border-[#4FC3F7] focus:outline-none focus:ring-2 ${
             errors.service ? "focus:ring-red-500" : "focus:ring-[#4FC3F7]"
           }`}
           required
         >
-          <option value="" disabled>
+          <option value="" className="text-black">
             Select an option
           </option>
-          <option value="Option 1">Option 1</option>
-          <option value="Option 2">Option 2</option>
+          <option value="Option 1" className="text-black">
+            Option 1
+          </option>
+          <option value="Option 2" className="text-black">
+            Option 2
+          </option>
         </select>
-        {errors.service && <p className="text-red-500 text-xs">{errors.service}</p>}
+        {errors.service && (
+          <p className="text-red-500 text-xs">{errors.service}</p>
+        )}
       </div>
 
       {/* textarea for message */}
