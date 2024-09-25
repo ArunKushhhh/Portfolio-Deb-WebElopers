@@ -57,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <form className="w-[100%] md:w-[80%] lg:w-[50%] px-6 flex flex-col gap-6" onSubmit={handleSubmit}>
+    <form id="contact" className="w-[100%] md:w-[80%] lg:w-[50%] px-6 flex flex-col gap-6" onSubmit={handleSubmit}>
       <div className="flex flex-col gap-2 justify-center items-center">
         <h3 className="about-us text-5xl">Get in Touch</h3>
         <h4 className="bg-gradient-to-r from-[#4FC3F7] to-white bg-clip-text text-transparent font-semibold">

@@ -38,7 +38,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="w-[100%] flex flex-col items-center justify-center gap-8">
+    <div id="projects" className="w-[100%] flex flex-col items-center justify-center gap-8">
       <div className="flex flex-col gap-2 justify-center items-center">
         <h3 className="about-us text-5xl">Projects</h3>
         <h4 className="bg-gradient-to-r from-[#4FC3F7] to-white bg-clip-text text-transparent font-semibold">
@@ -61,7 +61,7 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="w-[90%] flex flex-wrap gap-4 sm:justify-center">
+      <div className="w-[90%] flex flex-wrap gap-4 justify-center">
         {renderProjects()}
       </div>
 
